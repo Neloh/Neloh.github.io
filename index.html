@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -331,6 +331,257 @@
             typeWriterEffect();
         });
     </script>
+
+</body>
+</html>
+ -->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sibonelo's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .nav-container a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 0;
+            width: 90%;
+            margin: auto;
+        }
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.png') no-repeat center center/cover;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .typewriter {
+            font-size: 24px;
+            color: #555;
+        }
+        h2, h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+        }
+        .services-container, .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .services-container div, .skills-container div {
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            background-color: #e4e4e4;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-container {
+            text-align: center;
+        }
+        .contact-container input, .contact-container textarea {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-container button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-links i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        .skill-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Sibonelo's <span>Portfolio</span></div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="pages/aboutme.html">About</a>
+            <a href="#services">Services</a>
+            <a href="pages/skills.html">Skills</a>
+            <a href="#publications">Publications</a>
+            <a href="#articles">Articles</a>
+            <a href="#projects">Projects</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section id="home">
+    <div class="main-container">
+        <div class="content">
+            <h1>Hey I'm <span>Sibonelo</span></h1>
+            <div class="typewriter">
+                I'm a <span class="typewriter-text"></span><label for="">|</label>
+            </div>
+            <p>Data engineer with 5+ year of experience in Transforming <br> complex data into valuable insights.</p>
+            <div class="social-links">
+                <a href="https://github.com/Neloh"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sibonelo-ngobese-41a05133"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="publications" class="section">
+    <div class="container">
+        <h1>Publications</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Radio Continuum Detection</h3>
+                <p>Published research on cosmological signal detection methods using SKA precursor data.</p>
+                <a href="https://arxiv.org/abs/2011.10815" target="_blank" class="skill-link">View Publication</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="articles" class="section">
+    <div class="container">
+        <h1>Articles</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Running your own Chainlink Node locally</h3>
+                <p>Step-by-step Docker-based setup tutorial for Chainlink nodes.</p>
+                <a href="https://dev.to/neloh/chainlink-on-docker-part-1-4nig" target="_blank" class="skill-link">Read Article</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>IoT Sensor + AWS Integration</h3>
+                <p>Deployed a Python-based sensor system with AWS IoT Core for real-time data logging and analytics.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Data Pipeline on AWS</h3>
+                <p>Built a scalable batch processing pipeline using S3, Glue, and DynamoDB for structured and semi-structured data.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Blockchain Gas Analysis Tool</h3>
+                <p>Analyzed Ethereum transaction costs using Python and web3.py, focusing on gas optimization patterns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sibonelo's Portfolio. All Rights Reserved.</p>
+</footer>
+
+<script>
+    const typewriterText = document.querySelector('.typewriter-text');
+    const words = ["DATA ENGINEER", "CLOUD SOLUTIONS EXPERT", "DATA SCIENTIST"];
+    let wordIndex = 0;
+    let letterIndex = 0;
+    let currentWord = "";
+    let isDeleting = false;
+    const typeSpeed = 150;
+    const deleteSpeed = 100;
+    const delayBetweenWords = 2000;
+
+    function typeWriterEffect() {
+        currentWord = words[wordIndex];
+        if (isDeleting) {
+            typewriterText.textContent = currentWord.substring(0, letterIndex - 1);
+            letterIndex--;
+            if (letterIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeWriterEffect, 500);
+            } else {
+                setTimeout(typeWriterEffect, deleteSpeed);
+            }
+        } else {
+            typewriterText.textContent = currentWord.substring(0, letterIndex + 1);
+            letterIndex++;
+            if (letterIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeWriterEffect, delayBetweenWords);
+            } else {
+                setTimeout(typeWriterEffect, typeSpeed);
+            }
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        typeWriterEffect();
+    });
+</script>
 
 </body>
 </html>
