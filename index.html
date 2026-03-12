@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibonelo Ngobese | Senior AI Architect & AWS MVP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d4ff; 
+            --dark-bg: #0b0f1a;
+            --card-bg: #161e2d;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --aws-orange: #ff9900;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(11, 15, 26, 0.8);
+            backdrop-filter: blur(15px);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo { font-size: 22px; font-weight: 800; }
+        .logo span { color: var(--primary); }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0b0f1a 100%);
+            padding: 0 20px;
+        }
+
+        .badge-container { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
+        .badge {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .badge.aws {
+            background: rgba(255, 153, 0, 0.1);
+            color: var(--aws-orange);
+            border-color: rgba(255, 153, 0, 0.2);
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 800; margin-bottom: 20px; letter-spacing: -2px; line-height: 1.1; }
+        .hero h1 span { color: var(--primary); }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin-bottom: 40px; }
+
+        .btn {
+            background: var(--primary);
+            color: var(--dark-bg);
+            padding: 15px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-block;
+        }
+
+        .btn:hover { transform: scale(1.05); box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3); }
+
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 60px; font-weight: 800; padding: 0 20px; }
+
+        .credly-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 100px;
+        }
+
+        .credly-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .credly-card:hover { border-color: var(--primary); transform: translateY(-10px); background: #1c263a; }
+        .credly-card i { font-size: 45px; margin-bottom: 25px; display: block; }
+        .credly-card h3 { font-size: 1.25rem; margin-bottom: 15px; font-weight: 700; color: var(--text-main); }
+        .credly-card p { font-size: 0.95rem; color: var(--text-muted); }
+
+        footer { text-align: center; padding: 80px 0; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">NGOBESE<span>.PRO</span></div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="https://github.com" style="color:var(--text-muted); text-decoration:none; font-weight: 600;"><i class="fab fa-github"></i> Lab</a>
+                <a href="https://www.credly.com/users/sbonelo-ngobese.713db2ab/badges" class="btn" style="padding: 8px 18px; font-size: 13px;">View Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge-container">
+            <div class="badge aws">5x AWS MVP & All-Rounder Award Winner</div>
+            <div class="badge">Senior Cloud & AI Architect</div>
+        </div>
+        <h1>Architecting <span>Intelligence</span><br>on Global Infrastructure</h1>
+        <p>Seasoned engineer recognized for exceptional productivity and quality at AWS. Specialist in RAG, MLOps, and Reactive Distributed Systems [Transcript Ver. 2026].</p>
+        <a href="https://www.credly.com/users/sbonelo-ngobese.713db2ab/badges" class="btn">Explore Verified Credentials</a>
+    </header>
+
+    <section style="padding: 100px 0;">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="credly-grid">
+            <a href="https://www.credly.com/users/sbonelo-ngobese.713db2ab/badges" class="credly-card">
+                <i class="fas fa-trophy" style="color: var(--aws-orange);"></i>
+                <h3>AWS Excellence</h3>
+                <p>Multiple MVP and All-Rounder awards for raising the bar in productivity and quality within AWS Support Engineering.</p>
+            </a>
+            <a href="https://www.credly.com/users/sbonelo-ngobese.713db2ab/badges" class="credly-card">
+                <i class="fas fa-network-wired" style="color: var(--primary);"></i>
+                <h3>Reactive Systems</h3>
+                <p>Advanced mastery in Sharding, CRDTs, and Saga patterns for distributed microservices (Lightbend Advanced Certification).</p>
+            </a>
+            <a href="https://www.credly.com/users/sbonelo-ngobese.713db2ab/badges" class="credly-card">
+                <i class="fas fa-microchip" style="color: #61dafb;"></i>
+                <h3>Data Science & MLOps</h3>
+                <p>IBM Certified Data Scientist & Engineer. Expert in SageMaker pipelines, Bedrock RAG, and containerized AI orchestration.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Official Credly Transcript Issued: 5 March 2026. Verified Credentials of Sibonelo Ngobese.</p>
+    </footer>
+
+</body>
+</html>
